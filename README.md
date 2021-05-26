@@ -1,5 +1,7 @@
 # React Date picker
 
+[DEMO](https://sidonaldson-date-picker.herokuapp.com/)
+
 - React context used instead of Redux to provide non-persistant storage. Currently only implemented on one page but the intention is that this would be used for the duration of the booking process across multiple pages
 - Booking widget is the main parent component and I used composition to break the fuctionaltiy into reuseable components
 - Each component is controlled and takes it's props from the parent, the parent widget takes it's props from the context. I chose to not use context in the components to decouple them from the state model.
