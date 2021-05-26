@@ -1,3 +1,29 @@
+# React Date picker
+
+- React context used instead of Redux to provide non-persistant storage. Currently only implemented on one page but the intention is that this would be used for the duration of the booking process across multiple pages
+- Booking widget is the main parent component and I used composition to break the fuctionaltiy into reuseable components
+- Each component is controlled and takes it's props from the parent, the parent widget takes it's props from the context. I chose to not use context in the components to decouple them from the state model.
+- The component supports keyboard navigation via tabbing and each effect does not hijack this behaviour.
+- Added in a date picker to allow the user to choose different dates and times
+- CSS modules with SASS
+
+TODO
+- Make the first day selected by default
+- As the user selects a day scroll the menu to a better position (maybe left aligned)
+- On selection of day focus the user to the next available time slot button
+- On selection of time focus the user to the next button
+- Add custom tests using testing library (only snapshots at the moment which are only useful indicators)
+- The scroll effect is sometimes incorrect. I suspect it needs a slight delay post render.
+
+
+Built on the default TypseScript Create React App template.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
