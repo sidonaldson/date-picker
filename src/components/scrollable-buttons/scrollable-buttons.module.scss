@@ -1,0 +1,32 @@
+.scrollableButtons {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  padding: 3px;
+  margin: 0;
+  list-style: none;
+  overflow-y: scroll;
+  li {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 6px;
+  }
+  button {
+    border: none;
+    display: block;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    pointer-events: all;
+    cursor: pointer;
+    &.active {
+      background-color: darkgray;
+    }
+    &:disabled {
+      cursor: none;
+      pointer-events: none;
+    }
+  }
+}

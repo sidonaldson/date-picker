@@ -1,0 +1,44 @@
+$itemHeight: 40px;
+$buttonWidth: 30px;
+
+.horizontalMenu {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+}
+
+.horizontalMenu__nudger {
+  border: none;
+  width: $buttonWidth;
+}
+
+.horizontalMenu__list {
+  height: $itemHeight;
+}
+
+.horizontalMenu__list {
+  height: $itemHeight;
+  overflow: hidden;
+  width: calc(100% - #{$buttonWidth} * 2);
+}
+
+.horizontalMenu__listitem {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-flex;
+    height: $itemHeight;
+  }
+  button {
+    border: none;
+    width: 100%;
+    span {
+      display: block;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    &.active {
+      background: darkgray;
+    }
+  }
+}
